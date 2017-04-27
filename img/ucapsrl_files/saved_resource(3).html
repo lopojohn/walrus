@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<!-- saved from url=(0402)https://disqus.com/embed/comments/?base=default&f=w3r&t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&s_o=default#version=2da0f6ff2391ab0e884e9a07d6fe564c -->
+<html lang="en" dir="ltr" class="js no-touch localstorage sessionstorage contenteditable use-opacity-transitions"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Disqus Comments</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>
+        .alert--warning {
+            border-radius: 3px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: #FFE070;
+            color: #A47703;
+        }
+
+        .alert--warning a,
+        .alert--warning a:hover,
+        .alert--warning strong {
+            color: #A47703;
+            font-weight: bold;
+        }
+
+        .alert--error p,
+        .alert--warning p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        </style>
+    
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        #error {
+            display: none;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        
+    </style>
+
+<script src="./cb=gapi.loaded_0" async=""></script><script crossorigin="anonymous" id="bootstrap-script" data-app="lounge" src="./lounge.load.2da0f6ff2391ab0e884e9a07d6fe564c.js"></script><meta http-equiv="Content-Security-Policy" content="script-src https:;"><link rel="stylesheet" href="./lounge.1338080c7d626298e3eb715cb658042e.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lounge/main" src="./lounge.bundle.8b781bc5a49fa23f31cc1630fd043538.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="remote/config" src="./config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ga" src="./ga.js"></script><style id="css_1493264080001"></style><!--<base target="_parent">--><base href="." target="_parent"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fb" src="./sdk.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gapi" src="./api.js" gapi_processed="true"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body>
+    
+
+    
+    <div id="error" class="alert--error">
+        <p>We were unable to load Disqus. If you are a moderator please see our <a href="https://docs.disqus.com/help/83/"> troubleshooting guide</a>. </p>
+    </div>
+
+    
+    <script type="text/json" id="disqus-forumData">{"session":{"canModerate":false,"audienceSyncVerified":false,"mustVerify":false,"canReply":true,"mustVerifyEmail":false},"features":{},"forum":{"founder":"13854207","twitterName":"w3resource","guidelines":null,"favicon":{"permalink":"https://disqus.com/api/forums/favicons/w3r.jpg","cache":"https://c.disquscdn.com/uploads/forums/97/5503/favicon.png"},"disableDisqusBranding":false,"daysAlive":0,"createdAt":"2011-08-17T09:12:21.026388","category":"Tech","raw_guidelines":null,"id":"w3r","installCompleted":true,"pk":"975503","channel":null,"description":"\u003cp>Comprehensive Web Development tutorial \u003c/p>","raw_description":"Comprehensive Web Development tutorial ","permissions":{},"name":"w3resource","language":"en","settings":{"supportLevel":1,"adsDRNativeEnabled":false,"colorScheme":"light","adsVideoEnabled":false,"allowAnonPost":false,"ssoRequired":false,"unapproveLinks":true,"linkAffiliationEnabled":false,"adsProductLinksThumbnailsEnabled":false,"adsProductStoriesEnabled":false,"organicDiscoveryEnabled":false,"disable3rdPartyTrackers":false,"adsProductDisplayEnabled":false,"discoveryMax":false,"adsProductLinksEnabled":false,"hasCustomAvatar":false,"moderatorText":"","adsEnabled":false,"adsPositionTopEnabled":false,"allowMedia":false,"adultContent":false,"promotedDiscoveryEnabled":false,"allowAnonVotes":false,"adsProductVideoEnabled":false,"mustVerify":true,"discoveryThumbnailsEnabled":false,"mustVerifyEmail":true,"audienceSyncEnabled":false,"typeface":"auto","adsPositionBottomEnabled":false,"mediaembedEnabled":false,"discoveryLocked":false,"validateAllPosts":true,"adsSettingsLocked":false,"isVIP":false,"adsPositionInthreadEnabled":false},"organizationId":736753,"url":"http://www.w3resource.com","daysThreadAlive":0,"avatar":{"small":{"permalink":"https://disqus.com/api/forums/avatars/w3r.jpg?size=32","cache":"//a.disquscdn.com/1493161576/images/noavatar32.png"},"large":{"permalink":"https://disqus.com/api/forums/avatars/w3r.jpg?size=92","cache":"//a.disquscdn.com/1493161576/images/noavatar92.png"}},"signedUrl":"http://disq.us/?url=http%3A%2F%2Fwww.w3resource.com&key=PzKk_5gl4Cq6V7Hp_G6Hzg"}}</script>
+
+    
+    <script type="text/json" id="disqus-threadData">{"cursor":{"hasPrev":false,"prev":null,"total":8,"hasNext":false,"next":"1:0:0"},"code":0,"response":{"lastModified":1484688047,"posts":[{"dislikes":0,"numReports":0,"likes":1,"message":"\u003cp>My solution...\u003c/p>\u003cp>static capitalizeEachWord(phrase: string) {\u003cbr>    return phrase.split(\" \").map((word) =&gt; word.toUpperCase()[0] + word.slice(1)).join(\" \");\u003cbr>  }\u003c/p>","id":"3038212351","isHighlighted":false,"author":{"username":"claytonpassos","about":"Overkill developr","name":"Clayton Passos","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2141609999999998,"profileUrl":"https://disqus.com/by/claytonpassos/","url":"http://medium.com/codigorefinado","reputation":1.2141609999999998,"location":"Curitiba","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fmedium.com%2Fcodigorefinado&key=dRHuw3bj65fA-xTc_XxM-Q","isPrimary":true,"joinedAt":"2014-05-06T17:13:12","id":"105994970","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar32.jpg?1492693096"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar92.jpg?1492693096","large":{"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar92.jpg?1492693096"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-12-06T11:49:42","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"My solution... \n\nstatic capitalizeEachWord(phrase: string) {\n    return phrase.split(\" \").map((word) => word.toUpperCase()[0] + word.slice(1)).join(\" \");\n  }","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":1,"moderationLabels":[],"isEdited":false},{"dislikes":0,"numReports":0,"likes":1,"message":"\u003cpre>function capitalize_Words(str) {\u003cbr>    return str.toLowerCase().replace(/\\b\\w/g, function(x){\u003cbr>        return x.toUpperCase();\u003cbr>    });\u003cbr>}\u003cbr>\u003cbr>console.log(capitalize_Words('js string exercises'));\u003cbr>\u003c/pre>","id":"2841645993","isHighlighted":false,"author":{"username":"disqus_I2oM3n7IqL","about":"","name":"eesa","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.149152,"profileUrl":"https://disqus.com/by/disqus_I2oM3n7IqL/","url":"","reputation":1.149152,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2015-04-07T09:22:44","id":"152606075","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/disqus_I2oM3n7IqL.jpg","cache":"https://c.disquscdn.com/uploads/users/15260/6075/avatar32.jpg?1430214851"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/disqus_I2oM3n7IqL.jpg","cache":"https://c.disquscdn.com/uploads/users/15260/6075/avatar92.jpg?1430214851","large":{"permalink":"https://disqus.com/api/users/avatars/disqus_I2oM3n7IqL.jpg","cache":"https://c.disquscdn.com/uploads/users/15260/6075/avatar92.jpg?1430214851"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-08-17T06:02:10","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"\u003cpre>\nfunction capitalize_Words(str) {\n    return str.toLowerCase().replace(/\\b\\w/g, function(x){\n        return x.toUpperCase();\n    });\n}\n\nconsole.log(capitalize_Words('js string exercises'));\n\u003c/pre>","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":1,"moderationLabels":[],"isEdited":true},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>String.prototype.capitalize_words = function(){\u003cbr>        var str = this;\u003c/p>\u003cp>        return str.replace(/\\w\\S*/g, function(str){\u003cbr>                return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();\u003cbr>        });\u003cbr>};\u003c/p>\u003cp>console.log('js string exercises'.capitalize_words());\u003c/p>","id":"2793246036","isHighlighted":false,"author":{"username":"adampery1920","about":"","name":"Adam","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.324231,"profileUrl":"https://disqus.com/by/adampery1920/","url":"http://foundation.tadam.co.il/","reputation":1.324231,"location":"Israel","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Ffoundation.tadam.co.il%2F&key=-I_nxmkuzWMeGzx8EpbK7w","isPrimary":true,"joinedAt":"2013-09-18T17:10:55","id":"73816816","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/adampery1920.jpg","cache":"https://c.disquscdn.com/uploads/users/7381/6816/avatar32.jpg?1433500792"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/adampery1920.jpg","cache":"https://c.disquscdn.com/uploads/users/7381/6816/avatar92.jpg?1433500792","large":{"permalink":"https://disqus.com/api/users/avatars/adampery1920.jpg","cache":"https://c.disquscdn.com/uploads/users/7381/6816/avatar92.jpg?1433500792"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-07-20T13:43:21","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"String.prototype.capitalize_words = function(){\n        var str = this;\n\n        return str.replace(/\\w\\S*/g, function(str){\n                return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();\n        });\n};\n\nconsole.log('js string exercises'.capitalize_words());","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":0,"moderationLabels":[],"isEdited":false},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>It doesn't works  with UTF-8 characters, like in spanish, for example:\u003c/p>\u003cp>console.log(capitalize_Words('mar\u00eda encarnaci\u00f3n de los \u00e1ngeles \u00f1u\u00f1oa));\u003c/p>\u003cp>result:\u003cbr>\"Mar\u00eda Encarnaci\u00f3n De Los \u00e1Ngeles \u00f1U\u00f1oa\"\u003c/p>","id":"2786821315","isHighlighted":false,"author":{"username":"gttechpe","about":"","name":"gttechpe","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.232124,"profileUrl":"https://disqus.com/by/gttechpe/","url":"","reputation":1.232124,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2014-09-24T22:46:54","id":"123229215","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/gttechpe.jpg","cache":"https://c.disquscdn.com/uploads/users/12322/9215/avatar32.jpg?1411598815"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/gttechpe.jpg","cache":"https://c.disquscdn.com/uploads/users/12322/9215/avatar92.jpg?1411598815","large":{"permalink":"https://disqus.com/api/users/avatars/gttechpe.jpg","cache":"https://c.disquscdn.com/uploads/users/12322/9215/avatar92.jpg?1411598815"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-07-16T17:50:20","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"It doesn't works  with UTF-8 characters, like in spanish, for example: \n\nconsole.log(capitalize_Words('mar\u00eda encarnaci\u00f3n de los \u00e1ngeles \u00f1u\u00f1oa));\n\nresult:\n\"Mar\u00eda Encarnaci\u00f3n De Los \u00e1Ngeles \u00f1U\u00f1oa\"","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":0,"moderationLabels":[],"isEdited":false},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>Just learned about mapping and tried with success to use it.\u003c/p>\u003cp>var myString = \"Hello today is your day!\"\u003cbr>function letterCapitalize(str){\u003cbr>\tvar results = str.split(\" \"); \u003cbr>\tvar remainder = results.map(function(rm){\u003cbr>\t\treturn (rm.toUpperCase()[0] + rm.slice(1));\u003cbr>\t\t});\u003cbr>\tvar dopamine  = remainder.join(\" \");\u003cbr>\tconsole.log(dopamine);\u003cbr>}\u003c/p>\u003cp>letterCapitalize(myString);\u003c/p>","id":"2696755015","isHighlighted":false,"author":{"username":"codeangler","about":"","name":"Casey Burnett","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.259441,"profileUrl":"https://disqus.com/by/codeangler/","url":"","reputation":1.259441,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2014-09-13T16:05:58","id":"121838343","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/codeangler.jpg","cache":"https://c.disquscdn.com/uploads/users/12183/8343/avatar32.jpg?1469554313"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/codeangler.jpg","cache":"https://c.disquscdn.com/uploads/users/12183/8343/avatar92.jpg?1469554313","large":{"permalink":"https://disqus.com/api/users/avatars/codeangler.jpg","cache":"https://c.disquscdn.com/uploads/users/12183/8343/avatar92.jpg?1469554313"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-05-26T16:17:33","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"Just learned about mapping and tried with success to use it.\n\nvar myString = \"Hello today is your day!\"\nfunction letterCapitalize(str){\n\tvar results = str.split(\" \"); \n\tvar remainder = results.map(function(rm){\n\t\treturn (rm.toUpperCase()[0] + rm.slice(1));\n\t\t});\n\tvar dopamine  = remainder.join(\" \");\n\tconsole.log(dopamine);\n}\n\nletterCapitalize(myString);","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":0,"moderationLabels":[],"isEdited":true},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>what about this:\u003c/p>\u003cp>\u003ccode>\u003cbr>    DOCTYPE html&gt;\u003cbr>&lt;html&gt;\u003cbr>    &lt;head&gt;\u003cbr>        &lt;title&gt;RegExp&lt;/title&gt;\u003cbr>        &lt;meta charset=\"utf-8\"/&gt;\u003cbr>    &lt;/head&gt;\u003cbr>    \u003cbr>    &lt;body&gt;\u003cbr>        \u003cp>js string exercises\u003c/p>\u003cbr>        &lt;script&gt;\u003cbr>            var text = document.getElementById(\"para\").innerHTML;\u003cbr>            var pattern = text.replace(/\\s\\w/g, function capitalize(str){return \" \" + str.charAt(1).toUpperCase()});\u003cbr>            document.getElementById(\"para\").innerHTML = pattern;\u003cbr>            console.log(pattern);\u003cbr>        &lt;/script&gt;\u003cbr>    &lt;/body&gt;\u003cbr>&lt;/html&gt;\u003cbr>\u003c/code>\u003c/p>","id":"2324879360","isHighlighted":false,"author":{"username":"disqus_zAupLQYQmq","about":"","name":"Ann Onimus","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.233231,"profileUrl":"https://disqus.com/by/disqus_zAupLQYQmq/","url":"","reputation":1.233231,"location":"","isPrivate":false,"signedUrl":"","isPrimary":true,"joinedAt":"2013-11-11T09:23:21","id":"81314648","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/disqus_zAupLQYQmq.jpg","cache":"//a.disquscdn.com/1493161576/images/noavatar32.png"},"isCustom":false,"permalink":"https://disqus.com/api/users/avatars/disqus_zAupLQYQmq.jpg","cache":"//a.disquscdn.com/1493161576/images/noavatar92.png","large":{"permalink":"https://disqus.com/api/users/avatars/disqus_zAupLQYQmq.jpg","cache":"//a.disquscdn.com/1493161576/images/noavatar92.png"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2015-10-24T18:13:44","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"what about this:\n\n\u003ccode>\n    DOCTYPE html>\n\u003chtml>\n    \u003chead>\n        \u003ctitle>RegExp\u003c/title>\n        \u003cmeta charset=\"utf-8\"/>\n    \u003c/head>\n    \n    \u003cbody>\n        \u003cp id=\"para\">js string exercises\u003c/p>\n        \u003cscript>\n            var text = document.getElementById(\"para\").innerHTML;\n            var pattern = text.replace(/\\s\\w/g, function capitalize(str){return \" \" + str.charAt(1).toUpperCase()});\n            document.getElementById(\"para\").innerHTML = pattern;\n            console.log(pattern);\n        \u003c/script>\n    \u003c/body>\n\u003c/html>\n\u003c/code>","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":0,"moderationLabels":[],"isEdited":true},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>function Capitaliize(input) {\u003c/p>\u003cp>            var arr = input.split(\" \");\u003cbr>            var output = [];\u003cbr>            for (var i = 0; i &lt; arr.length - 1; i++) { \u003cbr>           output[i]=arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase());\u003c/p>\u003cp>            }\u003cbr>            document.write(output.join(\" \"));\u003c/p>\u003cp>        }\u003cbr>        Capitaliize(\"Hello my india \");\u003c/p>","id":"2106103960","isHighlighted":false,"author":{"username":"disqus_PTHcuPwmPa","about":"","name":"Nishant","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.3318189999999999,"profileUrl":"https://disqus.com/by/disqus_PTHcuPwmPa/","url":"","reputation":1.3318189999999999,"location":"","isPrivate":true,"signedUrl":"","isPrimary":true,"joinedAt":"2014-10-20T10:42:22","id":"126500904","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/disqus_PTHcuPwmPa.jpg","cache":"https://c.disquscdn.com/uploads/users/12650/904/avatar32.jpg?1435340392"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/disqus_PTHcuPwmPa.jpg","cache":"https://c.disquscdn.com/uploads/users/12650/904/avatar92.jpg?1435340392","large":{"permalink":"https://disqus.com/api/users/avatars/disqus_PTHcuPwmPa.jpg","cache":"https://c.disquscdn.com/uploads/users/12650/904/avatar92.jpg?1435340392"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2015-06-29T07:28:55","parent":null,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"function Capitaliize(input) {\n\n            var arr = input.split(\" \");\n            var output = [];\n            for (var i = 0; i \u003c arr.length - 1; i++) { \n           output[i]=arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase());\n            \n            }\n            document.write(output.join(\" \"));\n        \n        }\n        Capitaliize(\"Hello my india \");","canVote":false,"thread":"3554638794","forum":"w3r","depth":0,"points":0,"moderationLabels":[],"isEdited":false},{"dislikes":0,"numReports":0,"likes":0,"message":"\u003cp>static capitalizeEachWord(phrase: string) {\u003cbr>    return phrase.split(\" \").map((word) =&gt; word.toUpperCase()[0] + word.slice(1)).join(\" \");\u003cbr>  }\u003c/p>","id":"3038211610","isHighlighted":false,"author":{"username":"claytonpassos","about":"Overkill developr","name":"Clayton Passos","disable3rdPartyTrackers":false,"isPowerContributor":false,"isAnonymous":false,"rep":1.2141609999999998,"profileUrl":"https://disqus.com/by/claytonpassos/","url":"http://medium.com/codigorefinado","reputation":1.2141609999999998,"location":"Curitiba","isPrivate":false,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fmedium.com%2Fcodigorefinado&key=dRHuw3bj65fA-xTc_XxM-Q","isPrimary":true,"joinedAt":"2014-05-06T17:13:12","id":"105994970","reputationLabel":"Average","avatar":{"small":{"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar32.jpg?1492693096"},"isCustom":true,"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar92.jpg?1492693096","large":{"permalink":"https://disqus.com/api/users/avatars/claytonpassos.jpg","cache":"https://c.disquscdn.com/uploads/users/10599/4970/avatar92.jpg?1492693096"}}},"media":[],"isSpam":false,"isDeletedByAuthor":false,"createdAt":"2016-12-06T11:48:51","parent":2106103960,"isApproved":true,"isDeleted":false,"isFlagged":false,"raw_message":"static capitalizeEachWord(phrase: string) {\n    return phrase.split(\" \").map((word) => word.toUpperCase()[0] + word.slice(1)).join(\" \");\n  }","canVote":false,"thread":"3554638794","forum":"w3r","depth":1,"points":0,"moderationLabels":[],"isEdited":false}],"thread":{"feed":"https://w3r.disqus.com/javascript_make_capitalize_the_first_letter_of_each_word_in_a_string/latest.rss","identifiers":[],"dislikes":0,"likes":0,"message":"","id":"3554638794","createdAt":"2015-02-28T00:33:13","category":"993814","author":"13854207","isSpam":false,"signedLink":"http://disq.us/?url=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&key=RoGz4-pSa6BSuE-ScJPTdg","isDeleted":false,"hasStreaming":false,"raw_message":"","isClosed":false,"link":"http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php","slug":"javascript_make_capitalize_the_first_letter_of_each_word_in_a_string","forum":"w3r","clean_title":"JavaScript: Make capitalize the first letter of each word in a string","posts":8,"moderators":[13854207],"title":"JavaScript: Make capitalize the first letter of each word in a string","highlightedPost":null}},"order":"desc"}</script>
+
+    
+
+    <div id="fixed-content"></div>
+
+
+    
+        
+<script type="text/json" id="disqus-urls">{
+    "root":"//disqus.com",
+    "next":"https://c.disquscdn.com/next/current/embed"
+}</script>
+
+        
+        <script>!function () {
+            var d = document;
+            var toH = d.head.appendChild.bind(d.head);
+
+            var v = window.location.href.match(/[#&?]version=([0-9a-f]{32})/);
+            var src = 'https://c.disquscdn.com/next/embed/lounge.load';
+            if (v)
+                src += '.' + v[1];
+            src += '.js';
+
+            var s = d.createElement('script');
+            s.crossOrigin = 'anonymous';
+            s.id = 'bootstrap-script';
+            s.setAttribute('data-app', 'lounge');
+            s.src = src;
+            toH(s);
+
+            var m = d.createElement('meta');
+            m.setAttribute('http-equiv', 'Content-Security-Policy');
+            m.setAttribute('content', "script-src https:;");
+            toH(m);
+        }();</script>
+    
+
+
+<script src="./common.bundle.d46ded1fb0604b10063c95567fa0d433.js"></script><div id="layout" data-tracking-area="layout"><div id="onboard" data-tracking-area="onboard"><div></div></div><div id="highlighted-post" data-tracking-area="highlighted" class="highlighted-post" style="display: none;"></div><div id="global-alert"></div><header id="main-nav" data-tracking-area="main-nav"><nav class="nav nav-primary"><ul><li class="nav-tab nav-tab--primary tab-conversation active" data-role="post-count"><a class="publisher-nav-color"><span class="comment-count">8 comments</span><span class="comment-count-placeholder">Comments</span></a></li><li class="nav-tab nav-tab--primary tab-community"><a href="https://disqus.com/home/forums/w3r/" class="publisher-nav-color" data-action="community-sidebar" data-forum="w3r" id="community-tab"><span class="community-name"><strong>w3resource</strong></span><strong class="community-name-placeholder">Community</strong></a></li><li class="nav-tab nav-tab--primary dropdown user-menu" data-role="logout"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="dropdown-toggle" data-toggle="dropdown">
+<span class="dropdown-toggle-wrapper">
+
+<span>
+Login
+</span>
+
+</span> <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+
+
+<li>
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="auth:disqus">Disqus</a>
+</li>
+<li>
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="auth:facebook">Facebook</a>
+</li>
+<li>
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="auth:twitter">Twitter</a>
+</li>
+<li>
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="auth:google">Google</a>
+</li>
+
+
+
+</ul>
+</li><li class="nav-tab nav-tab--primary notification-menu unread" data-role="notification-menu"><a href="https://disqus.com/home/inbox/" class="notification-container" data-action="home" data-home-path="home/inbox/">
+<span class="notification-icon icon-comment" aria-hidden=""></span>
+<span class="notification-count" data-role="notification-count">1</span>
+</a>
+</li></ul></nav></header><section id="conversation" data-role="main" data-tracking-area="main"><div class="nav nav-secondary" data-tracking-area="secondary-nav"><ul><li id="recommend-button" class="nav-tab nav-tab--secondary recommend dropdown"><div class="thread-likes"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="recommend" title="Recommend this discussion" class="dropdown-toggle ">
+<span class="label label-default"><span class="recommend-icon icon-heart-empty"></span> Recommend</span>
+<span class="label label-recommended"><span class="recommend-icon icon-heart"></span> Recommended</span>
+</a>
+<ul class="dropdown-menu dropdown-menu--coachmark">
+<li>
+<h2 class="coachmark__heading">Discussion Recommended!</h2>
+<p class="coachmark__description">Recommending means this is a discussion worth sharing. It gets shared to your followers' Disqus feeds, and gives the creator kudos!</p>
+<a href="https://disqus.com/home/?utm_source=disqus_embed&amp;utm_content=recommend_btn" class="btn btn-primary coachmark__button" target="_blank">
+ Find More Discussions 
+</a>
+</li>
+</ul>
+</div></li><li id="thread-share-menu" class="nav-tab nav-tab--secondary dropdown share-menu hidden-sm"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="dropdown-toggle" data-toggle="dropdown" title="Share">
+<span class="icon-export"></span>
+<span class="label">Share</span>
+</a>
+<ul class="share-menu dropdown-menu">
+<li>
+<div class="share-menu__label">Share this discussion on</div>
+<ul>
+<li class="twitter">
+<a data-action="share:twitter" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#">Twitter</a>
+</li>
+<li class="facebook">
+<a data-action="share:facebook" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#">Facebook</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li data-role="post-sort" class="nav-tab nav-tab--secondary dropdown sorting pull-right"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="dropdown-toggle" data-toggle="dropdown">Sort by Newest<span class="caret"></span></a><ul class="dropdown-menu pull-right"><li class=""><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="sort" data-sort="popular">Best<i aria-hidden="true" class="icon-checkmark"></i></a></li><li class="selected"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="sort" data-sort="desc">Newest<i aria-hidden="true" class="icon-checkmark"></i></a></li><li class=""><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="sort" data-sort="asc">Oldest<i aria-hidden="true" class="icon-checkmark"></i></a></li></ul></li></ul></div><div id="posts"><div id="form" class="textarea-wrapper--top-level"><form class="reply"><div class="postbox">
+<div role="alert"></div>
+<div class="avatar">
+<span class="user">
+<img data-role="user-avatar" src="./noavatar92.7b2fde640943965cc88df0cdee365907.png" alt="Avatar">
+</span>
+</div>
+
+<div class="textarea-wrapper" data-role="textarea" dir="auto"><div><span class="placeholder">Join the discussion…</span><div class="textarea" tabindex="0" role="textbox" aria-multiline="true" contenteditable="PLAINTEXT-ONLY" data-role="editable" aria-label="Join the discussion…" style="overflow: auto; word-wrap: break-word; max-height: 350px;"><p><br></p></div><div style="display: none;"><ul class="user-mention__list">
+<li class="header user-mention__header">
+<h5>in this conversation</h5>
+</li>
+</ul>
+</div></div>
+<div data-role="drag-drop-placeholder" class="media-drag-hover" style="display: none">
+<div class="drag-text">
+⬇ Drag and drop your images here to upload them.
+</div>
+</div>
+<div class="edit-alert" role="postbox-alert"></div>
+<div class="post-actions">
+<ul class="wysiwyg">
+</ul>
+</div>
+</div>
+
+<div data-role="login-form"><div><section class="auth-section logged-out">
+<div class="connect">
+<h6>Log in with</h6>
+<ul data-role="login-menu" class="services login-buttons">
+
+<li class="auth-disqus">
+<button type="button" data-action="auth:disqus" title="Disqus" class="connect__button"><i class="icon-disqus"></i></button>
+</li>
+<li class="auth-facebook">
+<button type="button" data-action="auth:facebook" title="Facebook" class="connect__button"><i class="icon-facebook-circle"></i></button>
+</li>
+<li class="auth-twitter">
+<button type="button" data-action="auth:twitter" title="Twitter" class="connect__button"><i class="icon-twitter-circle"></i></button>
+</li>
+<li class="auth-google">
+<button type="button" data-action="auth:google" title="Google" class="connect__button"><i class="icon-google-plus-circle"></i></button>
+</li>
+</ul>
+</div>
+<div class="guest">
+<h6 class="guest-form-title">
+<span class="register-text"> or sign up with Disqus </span>
+<span class="guest-text"> or pick a name </span>
+</h6>
+
+<div class="help-tooltip__wrapper help-icon">
+<div id="rules" class="tooltip show help-tooltip">
+<h3 class="help-tooltip__heading">Disqus is a discussion network</h3>
+<ul class="help-tooltip__list">
+<li><span>Disqus never moderates or censors. The rules on this community are its own.</span></li>
+<li><span>Your email is safe with us. It's only used for moderation and optional notifications.</span></li>
+<li><span>Don't be a jerk or do anything illegal. Everything is easier that way.</span></li>
+</ul>
+<p class="clearfix"><a href="https://docs.disqus.com/kb/terms-and-policies/" class="btn btn-small help-tooltip__button" target="_blank">Read full terms and conditions</a></p>
+</div>
+</div>
+
+<p class="input-wrapper">
+<input dir="auto" type="text" placeholder="Name" name="display_name" id="view42_display_name" maxlength="30" class="input--text">
+</p>
+
+<div class="guest-details " data-role="guest-details">
+<p class="input-wrapper">
+<input dir="auto" type="email" placeholder="Email" name="email" id="view42_email" class="input--text">
+</p>
+
+<p class="input-wrapper">
+<input dir="auto" type="password" class="register-text input--text" placeholder="Password" name="password" id="view42_password">
+</p>
+
+<div class="acceptance-wrapper register-text">
+By signing up, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+<div class="acceptance-wrapper guest-text">
+By posting, you agree to the Disqus <a target="_blank" href="https://help.disqus.com/customer/portal/articles/1753105-basic-rules-for-disqus-powered-profiles-and-discussions">Basic Rules</a>, <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466260-terms-of-service">Terms of Service</a>, and <a target="_blank" href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy">Privacy Policy</a>.
+</div>
+
+<input type="checkbox" name="author-guest" style="display:none">
+
+<div class="proceed" data-role="submit-btn-container">
+<button type="submit" class="proceed__button btn submit" aria-label="Next"><span class="icon-proceed"></span><div class="spinner"></div></button>
+</div>
+</div>
+</div>
+</section>
+
+</div></div>
+</div>
+</form></div><button class="alert alert--realtime" data-role="realtime-notification" style="display: none;"></button><div id="no-posts" style="display: none;"></div><ul id="post-list" class="post-list"><li class="post" id="post-3038212351"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/claytonpassos/" class="user" data-action="profile" data-username="claytonpassos">
+<img data-role="user-avatar" data-user="105994970" src="./avatar92.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/claytonpassos/" data-action="profile" data-username="claytonpassos" data-role="username">Clayton Passos</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-3038212351" data-role="relative-time" class="time-ago" title="Tuesday, December 6, 2016 2:49 PM">5 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>My solution...</p><p>static capitalizeEachWord(phrase: string) {<br>    return phrase.split(" ").map((word) =&gt; word.toUpperCase()[0] + word.slice(1)).join(" ");<br>  }</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/1e8vfnj" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:3038212351">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2841645993"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_I2oM3n7IqL/" class="user" data-action="profile" data-username="disqus_I2oM3n7IqL">
+<img data-role="user-avatar" data-user="152606075" src="./avatar92(1).jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_I2oM3n7IqL/" data-action="profile" data-username="disqus_I2oM3n7IqL" data-role="username">eesa</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2841645993" data-role="relative-time" class="time-ago" title="Wednesday, August 17, 2016 9:02 AM">8 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<pre>function capitalize_Words(str) {<br>    return str.toLowerCase().replace(/\b\w/g, function(x){<br>        return x.toUpperCase();<br>    });<br>}<br><br>console.log(capitalize_Words('js string exercises'));<br></pre>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-1" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">1</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/1azuc2x" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2841645993">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2793246036"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/adampery1920/" class="user" data-action="profile" data-username="adampery1920">
+<img data-role="user-avatar" data-user="73816816" src="./avatar92(2).jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/adampery1920/" data-action="profile" data-username="adampery1920" data-role="username">Adam</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2793246036" data-role="relative-time" class="time-ago" title="Wednesday, July 20, 2016 4:43 PM">9 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>String.prototype.capitalize_words = function(){<br>        var str = this;</p><p>        return str.replace(/\w\S*/g, function(str){<br>                return str.charAt(0).toUpperCase() + str.substr(1).toLowerCase();<br>        });<br>};</p><p>console.log('js string exercises'.capitalize_words());</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/1a70yfo" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2793246036">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2786821315"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/gttechpe/" class="user" data-action="profile" data-username="gttechpe">
+<img data-role="user-avatar" data-user="123229215" src="https://c.disquscdn.com/uploads/users/12322/9215/avatar92.jpg?1411598815" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/gttechpe/" data-action="profile" data-username="gttechpe" data-role="username">gttechpe</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2786821315" data-role="relative-time" class="time-ago" title="Saturday, July 16, 2016 8:50 PM">9 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>It doesn't works  with UTF-8 characters, like in spanish, for example:</p><p>console.log(capitalize_Words('maría encarnación de los ángeles ñuñoa));</p><p>result:<br>"María Encarnación De Los áNgeles ñUñoa"</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/1a37937" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2786821315">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2696755015"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/codeangler/" class="user" data-action="profile" data-username="codeangler">
+<img data-role="user-avatar" data-user="121838343" src="https://c.disquscdn.com/uploads/users/12183/8343/avatar92.jpg?1469554313" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/codeangler/" data-action="profile" data-username="codeangler" data-role="username">Casey Burnett</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2696755015" data-role="relative-time" class="time-ago" title="Thursday, May 26, 2016 7:17 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Just learned about mapping and tried with success to use it.</p><p>var myString = "Hello today is your day!"<br>function letterCapitalize(str){<br>	var results = str.split(" "); <br>	var remainder = results.map(function(rm){<br>		return (rm.toUpperCase()[0] + rm.slice(1));<br>		});<br>	var dopamine  = remainder.join(" ");<br>	console.log(dopamine);<br>}</p><p>letterCapitalize(myString);</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/18lkthj" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2696755015">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2324879360"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_zAupLQYQmq/" class="user" data-action="profile" data-username="disqus_zAupLQYQmq">
+<img data-role="user-avatar" data-user="81314648" src="./noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_zAupLQYQmq/" data-action="profile" data-username="disqus_zAupLQYQmq" data-role="username">Ann Onimus</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2324879360" data-role="relative-time" class="time-ago" title="Saturday, October 24, 2015 9:13 PM">2 years ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>what about this:</p><p><code><br>    DOCTYPE html&gt;<br>&lt;html&gt;<br>    &lt;head&gt;<br>        &lt;title&gt;RegExp&lt;/title&gt;<br>        &lt;meta charset="utf-8"/&gt;<br>    &lt;/head&gt;<br>    <br>    &lt;body&gt;<br>        </code></p><p><code>js string exercises</code></p><code><br>        &lt;script&gt;<br>            var text = document.getElementById("para").innerHTML;<br>            var pattern = text.replace(/\s\w/g, function capitalize(str){return " " + str.charAt(1).toUpperCase()});<br>            document.getElementById("para").innerHTML = pattern;<br>            console.log(pattern);<br>        &lt;/script&gt;<br>    &lt;/body&gt;<br>&lt;/html&gt;<br></code><p></p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/12g68e8" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2324879360">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li><li class="post" id="post-2106103960"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_PTHcuPwmPa/" class="user" data-action="profile" data-username="disqus_PTHcuPwmPa">
+<img data-role="user-avatar" data-user="126500904" src="./noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_PTHcuPwmPa/" data-action="profile" data-username="disqus_PTHcuPwmPa" data-role="username">Nishant</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2106103960" data-role="relative-time" class="time-ago" title="Monday, June 29, 2015 10:28 AM">2 years ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>function Capitaliize(input) {</p><p>            var arr = input.split(" ");<br>            var output = [];<br>            for (var i = 0; i &lt; arr.length - 1; i++) { <br>           output[i]=arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase());</p><p>            }<br>            document.write(output.join(" "));</p><p>        }<br>        Capitaliize("Hello my india ");</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/ytx47s" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:2106103960">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-3038211610"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/claytonpassos/" class="user" data-action="profile" data-username="claytonpassos">
+<img data-role="user-avatar" data-user="105994970" src="./noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header class="comment__header">
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/claytonpassos/" data-action="profile" data-username="claytonpassos" data-role="username">Clayton Passos</a></span>
+
+<span><a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-2106103960" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Nishant</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://www.w3resource.com/javascript-exercises/javascript-string-exercise-9.php#comment-3038211610" data-role="relative-time" class="time-ago" title="Tuesday, December 6, 2016 2:48 PM">5 months ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>static capitalizeEachWord(phrase: string) {<br>    return phrase.split(" ").map((word) =&gt; word.toUpperCase()[0] + word.slice(1)).join(" ");<br>  }</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer class="comment__footer"><menu class="comment-footer__menu">
+<li class="voting" data-role="voting">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="reply">
+<span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="comment__share">
+<a class="toggle"><span class="text">Share ›</span></a>
+<ul class="comment-share__buttons">
+<li class="twitter">
+<button class="share__button" data-action="share:twitter">Twitter</button>
+</li>
+<li class="facebook">
+<button class="share__button" data-action="share:facebook">Facebook</button>
+</li>
+<li class="link">
+<input class="share__button" value="http://disq.us/p/1e8vf2y" name="Link" title="Click to copy post link" data-action="copy-link" readonly="">
+</li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:3038211610">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" class="realtime-button"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+</li></ul>
+</li></ul><div class="load-more" data-role="more" style="display: none;"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" data-action="more-posts" class="btn load-more__button">Load more comments</a></div></div></section><div id="placement-bottom" data-tracking-area="discovery-south"></div><div id="footer" data-tracking-area="footer" class="disqus-footer__wrapper"><ul class="disqus-footer"><li class="disqus-footer__logo"><a href="https://disqus.com/" rel="nofollow" title="Powered by Disqus" class="disqus-footer__link">Powered by Disqus</a></li><li id="thread-subscribe-button" class="email disqus-footer__item"><div class="default"><a href="https://disqus.com/embed/comments/?base=default&amp;f=w3r&amp;t_u=http%3A%2F%2Fwww.w3resource.com%2Fjavascript-exercises%2Fjavascript-string-exercise-9.php&amp;t_d=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;t_t=JavaScript%3A%20Make%20capitalize%20the%20first%20letter%20of%20each%20word%20in%20a%20string%20&amp;s_o=default#" rel="nofollow" data-action="subscribe" title="Subscribe and get email updates from this discussion" class="disqus-footer__link"><i aria-hidden="true" class="icon icon-mail"></i><span class="clip">Subscribe</span><i aria-hidden="true" class="icon icon-checkmark"></i></a></div><div class="form"><div class="input-wrapper"><input id="thread-subscribe-email" type="email" placeholder="yourname@email.com" class="disqus-footer__input input--text"></div></div></li><li class="install disqus-footer__item"><a href="https://publishers.disqus.com/engage?utm_source=w3r&amp;utm_medium=Disqus-Footer" rel="nofollow" target="_blank" class="disqus-footer__link"><i aria-hidden="true" class="icon icon-disqus"></i><span class="clip hidden-sm">Add Disqus to your site</span><span class="clip visible-sm hidden-xs">Add Disqus</span><span class="clip visible-xs">Add</span></a></li><li class="privacy disqus-footer__item"><a href="https://help.disqus.com/customer/portal/articles/1657951?utm_source=disqus&amp;utm_medium=embed-footer&amp;utm_content=privacy-btn" rel="nofollow" target="_blank" class="disqus-footer__link"><i aria-hidden="true" class="icon icon-lock"></i><span class="clip">Privacy</span></a></li></ul></div></div><iframe style="position: absolute; width: 1px; height: 1px; left: -9999px; display: none;" aria-hidden="true" id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" src="./iframe.html"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./87XNE1PC38r.html" style="border: none;"></iframe></div></div></div><img src="./tpid=c2esa2go31teppf" style="display: none;"><img src="./23096" style="display: none;"><img src="./saved_resource" style="display: none;"><iframe src="./sync.html" style="display: none;"></iframe><img src="./saved_resource(1)" style="display: none;"></body></html>
